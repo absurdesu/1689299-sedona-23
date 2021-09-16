@@ -1,0 +1,43 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.linebreak {
+  display: none;
+}
+
+.linebreak--mobile {
+  @media (max-width: @mobile-width-only) {
+    display: initial;
+  }
+}
+
+.linebreak--tablet {
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.linebreak--desktop {
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}

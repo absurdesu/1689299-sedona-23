@@ -1,0 +1,35 @@
+.feedback__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.feedback__header {
+  padding: 35px 0 0;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @bordermobile;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 436px;
+    padding: 65px 166px 40px;
+  }
+}
+
+.feedback__header .content-header__title {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.feedback__header .content-header__text {
+  line-height: 24px;
+}

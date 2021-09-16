@@ -1,0 +1,25 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.social-list__item:not(:last-of-type) {
+  margin-right: 6px;
+}
+
+.social-list__link {
+  width: 46px;
+  height: 48px;
+  background-color: @blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,32 @@
+.welcome {
+  background: @blue url("../img/bg-welcome.jpg") no-repeat;
+  width: 320px;
+  height: 389px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 518px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.welcome--inner {
+  height: 158px;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
+}
+
+.welcome__wrapper {
+  padding-top: 90px;
+  text-align: center;
+}
+
+.welcome--inner > .welcome__wrapper {
+  padding-top: 50px;
+}

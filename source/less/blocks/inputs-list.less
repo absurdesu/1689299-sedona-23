@@ -1,0 +1,180 @@
+.inputs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inputs-list__label {
+  line-height: 26px;
+}
+
+.inputs-list__label--alt {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+  color: @black;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 85px;
+}
+
+.inputs-list__input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: @black;
+  border: none;
+  background-color: @verylightgray;
+}
+
+.inputs-list__input::placeholder {
+  color: @black;
+}
+
+.inputs-list--full-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 215px;
+  margin-top: 15px;
+}
+
+.inputs-list--full-name .inputs-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs-list__input--name,
+.inputs-list__input--surname,
+.inputs-list__input--patronym {
+  flex-grow: 1;
+  margin-left: 15px;
+  height: 58px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.inputs-list--contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 192px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.inputs-list__input--phone,
+.inputs-list__input--email {
+  height: 58px;
+  margin-top: 5px;
+  padding-left: 22px;
+  padding-right: 80px;
+  width: 178px;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.inputs-list__input--phone {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.inputs-list__input--email {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.inputs-list--impression {
+  margin-top: 32px;
+  padding-bottom: 15px;
+}
+
+.inputs-list__item--negative,
+.inputs-list__item--neutral {
+  margin-top: 43px;
+}
+
+.inputs-list__label--radio::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 5px;
+  width: 48px;
+  height: 48px;
+  background-color: @verylightgray;
+  border: 5px solid @verylightgray;
+  border-radius: 100%;
+}
+
+.inputs-list__label--radio::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 18px;
+  height: 18px;
+  background-color: @verydarkgray;
+  border: 3px solid @verydarkgray;
+  border-radius: 100%;
+}
+
+.inputs-list__input--radio:checked + .inputs-list__label--radio::after {
+  display: block;
+}
+
+.inputs-list--attraction {
+  margin-top: 27px;
+  padding-bottom: 13px;
+}
+
+.inputs-list__item--mount,
+.inputs-list__item--park,
+.inputs-list__item--cliffs {
+  margin-top: 54px;
+}
+
+.inputs-list__label--checkbox::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 5px;
+  width: 46px;
+  height: 46px;
+  background-color: @verylightgray;
+  border: 5px solid @verylightgray;
+  border-radius: 6px;
+}
+
+.inputs-list__label--checkbox::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/icon-check.svg");
+}
+
+.inputs-list__input--checkbox:checked + .inputs-list__label--checkbox::after {
+  display: block;
+}
+
+.inputs-list__input--emotions {
+  resize: none;
+  width: 236px;
+  min-height: 118px;
+  margin-top: 12px;
+  margin-left: 8px;
+  padding: 13px 21px 29px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}

@@ -1,0 +1,43 @@
+.tips-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 35px 11px 35px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 330px;
+  }
+}
+
+.tips-list__title {
+  font-weight: bold;
+  font-size: 18px;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+.tips-list__text {
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+}
+
+.tips-list__item {
+  @media (min-width: @tablet-width) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.tips-list__item--keepsake {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
